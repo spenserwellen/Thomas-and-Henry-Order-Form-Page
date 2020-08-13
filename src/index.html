@@ -1,0 +1,220 @@
+<!-- 
+  Copyright (C) 2020 Spenser Wellen, All rights reserved.
+  https://www.spenserwellen.com
+	
+  This is an order form page for watch company Thomas & Henry. The copyright will be included in all .html, and .css files and the comment syntax will be applied automatically. The formatting will be preserved, including the indentation from the left  side of this page.
+-->
+
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <title>Thomas & Henry | Order Form</title>
+</head>
+
+<body>
+  <header id="headercont">
+    <!-- Nav bar with logo, title, and nav buttons -->
+    <!-- Nav buttons: About, Timeline, Projects, Contact -->
+    <!-- Nav bar should be faded at very top (besides text), otherwise be bar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navcont">
+      <div class="container">
+
+        <!-- Brand and toggle are grouped together for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsing" aria-expanded="false">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-icon" href="#"><img src="https://theoandharris.com/wp-content/uploads/cropped-favicon-logo-1.png" class="img-fluid" alt="Thomas & Henry Logo" width="11%"></a>
+          <span class="navbar-name">&nbsp;Thomas & Henry</span>
+        </div>
+        <!--  End of Navbar-Header  -->
+
+        <!-- Collect the nav links and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapsing">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#section-about">Watch News</a></li>
+            <li><a href="#section-timeline">Service</a></li>
+            <li><a href="#section-projects">Events</a></li>
+            <li><a href="#section-contact">Contact</a></li>
+            <li>&nbsp;</li>
+          </ul>
+        </div> <!-- End of Navbar Collapse -->
+
+      </div> <!-- End of Container-Fluid -->
+    </nav> <!-- End of Navbar -->
+
+    <div class="hero-box">
+      <h1 id="title">Find the <br>perfect watch</h1>
+      <h2 id="h2cont"><br><br><span style="font-weight:530">Our disruptive watch-finding alogrithm has already<br>helped thousands find the perfect watch.</span></h2>
+    </div>
+    </head>
+    <!-- End of Header-->
+
+    <!-- Order Section of Page -->
+    <section class="section-form">
+
+      <!-- Order Form -->
+      <br><br><br>
+      <div class="form-grid">
+        <p id="description"><b><i>Free Instant Quote Request Form.</i></b></p>
+        <form id="survey-form">
+
+          <!-- Entry 1 -->
+          <label id="email-label" for="email"><span style="color: hsl(53deg, 16%, 12%)">Email Address: </span><span style="color: hsl(42deg, 73%, 47%)">*</span></label>
+          <input type="email" id="email" name="email" placeholder="Email Address" required>
+          <!-- End of Entry 1 -->
+
+          <!-- Entry 2 -->
+          <label id="name-label" for="name"><span style="color: hsl(53deg, 16%, 12%)">Name: <span style="color: hsl(42deg, 73%, 47%)">*</span></label>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <!-- End of Entry 2 -->
+
+          <!-- Entry 3 -->
+          <label id="last-name-label" for="Last Name"><span style="color: hsl(53deg, 16%, 12%)">Last Name:</span></label>
+          <input type="text" id="Last-Name" name="Last Name" placeholder="Your Last Name!">
+          <!-- End of Entry 3 -->
+
+          <!-- Entry 4 -->
+          <label id="dropdown" for="gender"><span style="color: hsl(53deg, 16%, 12%)">Make:</span>
+            <select name="gender">
+              <option value="Rolex">Rolex</option>
+              <option value="Oris">Oris</option>
+              <option value="Tudor">Tudor</option>
+              <option value="Omega">Omega</option>
+              <option value="Panerai">Panerai</option>
+              <option value="Breitling">Breitling</option>
+              <option value="Cartier">Cartier</option>
+              <option value="Parmigani">Parmigani</option>
+              <option value="Patek Philippe">Patek Philippe</option>
+              <option value="Audemars Piguet">Audemars Piguet</option>
+              <option value="Tissot">Tissot</option>
+              <option value="IWC">IWC</option>
+              <option value="Tag Heuer">Tag Heuer</option>
+              <option value="Vacheron">Vacheron</option>
+            </select>
+          </label>
+          <!-- End of Entry 4 -->
+
+          <!-- Entry 5 -->
+          <label id="number-label" for="Age"><span style="color: hsl(53deg, 16%, 12%)">Model:</span></label>
+          <input type="number" id="number" name="age" min="000000" max="999999" placeholder="Model Numbers Only - If known">
+          <!-- End of Entry 5 -->
+
+          <!-- Entry 6 -->
+          <label id="clothing-type-label" for="spending"><span style="color: hsl(53deg, 16%, 12%)">Condition:</span><br>
+            <input type="checkbox" value="New" name="clothing-type" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">New</span><br>
+            <input type="checkbox" value="Used" name="clothing-type" style="margin-right: 10px">Used<br>
+            <input type="checkbox" value="Refurbished" name="clothing-type" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Refurbished</span><br>
+            <input type="checkbox" value="Vintage" name="clothing-type" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Vintage</span><br>
+          </label>
+          <!-- End of Entry 6 -->
+
+          <!-- Entry 7 -->
+          <label id="spending-label" for="spending"><span style="color: hsl(53deg, 16%, 12%)">Price Range:</span><br>
+            <input class="1-spending" type="radio" value="0 - 50" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">$0 - $5000</span><br>
+            <input type="radio" value="50 - 100" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">$5001 - $10,000</span><br>
+            <input type="radio" value="100 - 250" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">$10,001 - $15,000</span><br>
+            <input type="radio" value="250 - 500" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">$15,000 - $20,000</span><br>
+            <input type="radio" value="500 +" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">$20,000+</span><br>
+          </label>
+          <!-- End of Entry 7 -->
+
+          <!-- Entry 8 -->
+          <label id="last-name-label" for="Last Name"><span style="color: hsl(53deg, 16%, 12%)">Dial Color:</span></label>
+          <input type="text" id="Last-Name" name="Last Name" placeholder="Black, Red, White, Blue, Any Other Details">
+          <!-- End of Entry 8 -->
+
+          <!-- Entry 9 -->
+          <label id="dropdown" for="gender"><span style="color: hsl(53deg, 16%, 12%)">Dial Size:</span>
+            <select name="gender">
+              <option value="34mm">34mm</option>
+              <option value="36mm">36mm</option>
+              <option value="38mm">38mm</option>
+              <option value="40mm">40mm</option>
+              <option value="42mm">42mm</option>
+              <option value="44mm">44mm</option>
+            </select>
+          </label>
+          <!-- End of Entry 9 -->
+
+          <!-- Entry 10 -->
+          <label id="spending-label" for="spending"><span style="color: hsl(53deg, 16%, 12%)">Case Material:</span><br>
+            <input class="1-spending" type="radio" value="0 - 50" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Stainless Steel</span><br>
+            <input type="radio" value="50 - 100" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Titanium</span><br>
+            <input type="radio" value="100 - 250" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Rose Gold</span><br>
+            <input type="radio" value="250 - 500" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">White Gold</span><br>
+            <input type="radio" value="500 +" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Yellow Gold</span><br>
+            <input type="radio" value="500 +" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Bronze</span><br>
+            <input type="radio" value="500 +" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Silver</span><br>
+          </label>
+          <!-- End of Entry 10 -->
+
+          <!-- Entry 11 -->
+          <label id="spending-label" for="spending"><span style="color: hsl(53deg, 16%, 12%)">Strap Style:</span><br>
+            <input class="1-spending" type="radio" value="0 - 50" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Jubilee</span><br>
+            <input type="radio" value="50 - 100" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Standard Metal Braclet</span><br>
+            <input type="radio" value="100 - 250" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Metal Chain Link</span><br>
+            <input type="radio" value="250 - 500" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Leather Strap</span><br>
+            <input type="radio" value="500 +" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Silicone</span><br>
+            <input type="radio" value="500 +" name="spending" style="margin-right: 10px"><span style="color: hsl(53deg, 16%, 12%)">Nato</span><br>
+          </label>
+          <!-- End of Entry 11 -->
+
+          <!-- Entry 12 -->
+          <label id="phone-label" for="Phone-Number"><span style="color: hsl(53deg, 16%, 12%)">Phone Number: </span><span style="color: hsl(42deg, 73%, 47%)">*</span></label>
+          <input type="text" id="Phone-Number" name="Phone Number" placeholder="Phone Number" required>
+          <!-- End of Entry 12 -->
+
+          <!-- Entry 13 -->
+          <label id="shop-label" for="shop"><span style="color: hsl(53deg, 16%, 12%)">Comments:</span></label>
+          <textarea rows="4" placeholder="Model Name & Any Other Details to Assist w/ Quote"></textarea>
+          <!-- End of Entry 13 -->
+
+          <!-- Submit Button -->
+          <label id="submit-label" type="checkbox"></label>
+          <input id="submit" type="submit" value="Get instant quote now">
+          <!-- End of Submit Button -->
+
+        </form>
+      </div>
+      <!-- End of Order Form -->
+
+    </section>
+    <!-- End of Order Section of Page -->
+
+    <!-- Footer -->
+    <footer id="footcont">
+      <h4>Thomas & Henry Watches - Est. 1995</h4>
+
+      <!-- Copyright text -->
+      <h4>
+        Copyright &copy; 2020
+        <a href="https://twitter.com/spenserwellen" target="_blank">Spenser Wellen</a>,
+        All rights reserved.
+      </h4>
+      <!-- End of Copyright Text -->
+
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Script References -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!--
+
+  This is the tester for freecodecamp.com to make sure all the rules are passing
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- End of Script References -->
+</body>
+
+</html>

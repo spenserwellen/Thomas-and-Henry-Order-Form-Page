@@ -1,0 +1,615 @@
+/*-------------------------------
+Purpose: Main CSS File
+Version: 0.1
+Author: Spenser Wellen
+Date: 07/08/2020
+Last Update: 07/03/2020
+-------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;515;600;700&display=swap");
+
+/*
+Hacienda:       #906b16
+Dingley:        #757f49
+Graphite:       #3d3b2c
+Skeptic:        #a7bbac
+Horses Neck:    #665329
+Charlet Green:  hsl(71deg, 27%, 32%) //Header-Footer Green Style
+Celeste:        hsl(53deg, 16%, 80%) //Header-Footer White Style
+Envy:           hsl(135deg, 13%, 60%) //Link hover style
+*/
+
+/* -------------------------------------------*/
+/* BASIC SETUP */
+/* -------------------------------------------*/
+html,
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: #202121;
+  height: 100%;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(86, 83, 62, 0.95)),
+      to(rgba(86, 83, 62, 0.95))
+    ),
+    url("https://www.webfx.com/blog/images/cdn.designinstruct.com/files/315-mixed_grunge_textures/mixed_grunge_texture_02.jpg");
+  background-size: auto;
+  background-color: hsl(53deg, 16%, 29%);
+}
+
+body {
+  margin: 0;
+}
+
+#navcont {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#headercont {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+a {
+  color: hsl(53deg, 16%, 87%);
+}
+
+a:hover {
+  color: hsl(135deg, 13%, 72%);
+  transition: 0.5s;
+}
+
+h1 {
+  color: hsl(53deg, 16%, 88%);
+  text-align: center;
+  padding-top: 7%;
+  font-weight: 400;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 26px;
+  color: hsl(53deg, 16%, 89%);
+  text-align: center;
+  font-weight: 380;
+}
+
+#h2cont {
+  font-size: 26px;
+  color: hsl(53deg, 16%, 89%);
+  text-align: center;
+  font-weight: 380;
+}
+
+h4 {
+  margin: 0 auto;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+}
+
+/* -------------------------------------------*/
+/* HEADER */
+/* -------------------------------------------*/
+header {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.4)),
+      to(rgba(0, 0, 0, 0.4))
+    ),
+    url(https://www.bexsonn.com/wp-content/uploads/2016/06/8CB9837.jpg);
+  background-size: auto;
+  background-position: auto;
+  height: 33em;
+}
+
+/* -------------------------------------------*/
+/* NAVIGATION BAR */
+/* -------------------------------------------*/
+.img-fluid {
+  margin-top: 0.2em;
+  width: 5.5%; /* you can use % */
+  height: auto;
+}
+
+.icon-bar {
+  background-color: #fff;
+}
+
+.navbar-trans {
+  background-color: #279ddd;
+  color: #fff;
+}
+
+.navbar-trans li>a: hover, .navbar-trans li>a: focus, .navbar-trans li.active {
+  background-color: #38afef;
+}
+
+.navbar-trans a {
+  color: #fefefe;
+}
+
+.navbar-trans .form-control: focus {
+  border-color: #eee;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(100, 100, 100, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(100, 100, 100, 0.6);
+}
+
+span.navbar-name {
+  font-size: 25px;
+  horitontal-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+  color: hsl(53deg, 16%, 80%);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar-icon {
+  filter: invert(100%);
+}
+
+.navbar-default {
+  background-color: hsl(71deg, 27%, 34%);
+  border-color: hsl(41deg, 43%, 20%);
+  border-width: 2px;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #8fcdfd;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: hsl(53deg, 16%, 80%);
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: hsl(135deg, 13%, 60%);
+  transition: 0.5s;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #000000;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #8fcdfd;
+  background-color: #969696;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #969696;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #8fcdfd;
+  background-color: #969696;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #8fcdfd;
+  background-color: #969696;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #8fcdfd;
+  background-color: #969696;
+}
+.navbar-default .navbar-toggle {
+  border-color: #969696;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #969696;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #8fcdfd;
+}
+
+/* -------------------------------------------*/
+/* FORM */
+/* -------------------------------------------*/
+.section-form {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(86, 83, 62, 0.95)),
+      to(rgba(86, 83, 62, 0.95))
+    ),
+    url("https://www.webfx.com/blog/images/cdn.designinstruct.com/files/315-mixed_grunge_textures/mixed_grunge_texture_02.jpg");
+  background-size: auto;
+  margin: 7vh auto 3vw auto;
+  z-index: 1;
+}
+
+.form-grid {
+  max-width: 900px;
+  background-color: hsl(135deg, 13%, 49%);
+  opacity: 0.75;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-radius: 0 6em 0 6em;
+  box-shadow: 0 3em 6em 5em rgba(0, 0, 0, 0.3), 0 5em 10em 0 rgba(0, 0, 0, 0.19);
+}
+
+#description {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: hsl(53deg, 16%, 18%);
+  font-size: 24px;
+  font-weight: 450;
+  text-align: center;
+}
+
+#survey-form {
+  display: grid;
+  width: 80%;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+label {
+  padding-top: 30px;
+}
+
+::placeholder {
+  color: hsl(53deg, 16%, 12%);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2em !important;
+  background-color: hsl(53deg, 16%, 80%) !important;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+  font-size: 13px;
+}
+
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+  font-size: 13px;
+}
+
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+  font-size: 13px;
+}
+
+label select {
+  height: 40px;
+  font-size: 13px;
+  color: #7e7575;
+  background-color: #fff;
+}
+
+input[type="radio"],
+checked {
+  background-color: black;
+}
+
+input[type="radio"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: rgba(86, 83, 62, 0.5);
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid hsl(53deg, 16%, 83%);
+}
+
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid hsl(53deg, 16%, 23%);
+  transition: 0.35s;
+}
+
+#spending-label input,
+#clothing-type-label input {
+  margin-top: 15px;
+}
+
+input[type="checkbox"],
+checked {
+  background-color: black;
+}
+
+input[type="checkbox"]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 0.2em;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: rgba(86, 83, 62, 0.5);
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid hsl(53deg, 16%, 83%);
+}
+
+input[type="checkbox"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 0.2em;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid hsl(53deg, 16%, 23%);
+  transition: 0.35s;
+}
+
+input[type="submit"] {
+  width: 72%;
+  text-transform: uppercase;
+  height: auto;
+  background-color: hsl(42deg, 73%, 39%);
+  color: hsl(53deg, 16%, 87%);
+  font-size: 32px;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 200px;
+  border-style: solid 10px;
+  border-color: hsl(42deg, 73%, 43%);
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+input[type="submit"]:hover {
+  background-color: hsl(53deg, 16%, 18%);
+  border-color: hsl(53deg, 16%, 61%);
+  color: hsl(71deg, 27%, 43%);
+  transition: 0.6s;
+  transition-timing-function: ease-in-out;
+}
+
+#submit-label,
+#submit {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4em;
+}
+
+*::selection {
+  color: hsl(53deg, 16%, 80%);
+  background-color: rgba(86, 83, 62, 0.65);
+}
+
+/* -------------------------------------------*/
+/* FOOTER */
+/* -------------------------------------------*/
+footer {
+  background-color: brown;
+  color: #ddd;
+  max-height: 100px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 2px solid hsl(41deg, 43%, 22%);
+  border-bottom: 2px hsl(41deg, 43%, 20%);
+  background-color: hsl(71deg, 27%, 39%);
+}
+
+footer h4 {
+  text-align: center;
+  margin-top: 0.5em;
+  color: hsl(53deg, 16%, 87%);
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 70%;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: all;
+}
+
+footer li {
+  display: inline-block;
+}
+
+.footer {
+  max-width: 1140px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.footer-nav {
+  list-style-type: none;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child {
+  margin-right: 0;
+}
+
+.footer-logo {
+  margin: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 150%;
+  font-weight: 700;
+  user-select: none;
+}
+
+footer .nav > li > a {
+  padding: 3px;
+  color: red;
+}
+
+footer .nav > li > a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+#footcont {
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2),
+    4px 4px 4px 4px rgba(0, 0, 0, 0.19);
+}
+
+/* -------------------------------------------*/
+/* MEDIA QUERIES */
+/* -------------------------------------------*/
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #8fcdfd;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #8fcdfd;
+    background-color: #969696;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  header {
+    height: 400px;
+  }
+
+  h1 {
+    padding-top: 4%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #survey-form {
+    min-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    height: 300px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(rgba(0, 0, 0, 0.65)),
+        to(rgba(0, 0, 0, 0.65))
+      ),
+      url("https://www.webfx.com/blog/images/cdn.designinstruct.com/files/315-mixed_grunge_textures/mixed_grunge_texture_02.jpg");
+  }
+
+  h1 {
+    padding-top: 7%;
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  header {
+    height: 200px;
+  }
+
+  h1 {
+    padding-top: 1%;
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 0;
+  }
+}
